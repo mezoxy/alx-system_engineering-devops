@@ -1,2 +1,2 @@
 #!/bin/bash
-rm<find -name *.txt
+rm -r <find -name *.js
