@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#this script will print to the user Best School !0 times
+#this script will print Best School 10 times using for loop
 for (( i=0; i <10; i++ ))
 do
 	echo "Best School"
