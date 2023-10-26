@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This bash script display the content of the current directory in a list format
-for ((i=0; i < 1; i++))
+for i in *
 do
-	ls | cut -d '-' -f 2
+	echo "$i" | cut -d '-' -f 2
 done
