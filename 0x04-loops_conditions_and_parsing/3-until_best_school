@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #This script will print 10 times Best School using until loop
-i=0
+i=
 until [ $i -gt 9 ]
 do
 	echo "Best School"
