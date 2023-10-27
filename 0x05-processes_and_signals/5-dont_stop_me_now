@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # A Bash script that stops 4-to_infinity_and_beyond process.
-kill -9 -19
+pid=$(<pid.txt)
+kill "$pid"
