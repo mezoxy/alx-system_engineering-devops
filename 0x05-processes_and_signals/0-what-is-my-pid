@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Tj=hi bash script will displays its own PID
+ps -o pid
