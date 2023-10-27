@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # This script will print the PID
-top | less | cut -f 1,12 
+i="pgep bash"
+echo "$i bash"
