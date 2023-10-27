@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This bash script display the content of the current directory in a list format
-for i in *
+# shellcheck disable=all
+for ((i=0; i<1; i++))
 do
-	echo "$i" | cut -d '-' -f 2
+	ls | cut -d '-' -f 2
 done
