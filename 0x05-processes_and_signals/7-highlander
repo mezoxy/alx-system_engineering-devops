@@ -2,7 +2,7 @@
 #This script will display "To infinity and beyond" indefinitely
 echo $$ > kil7-hight.txt
 trap "I am invincible!!!" SIGTERM
-while [ 1 ]
+while true 
 do
 	echo "To infinity and beyond"
 	sleep 2
