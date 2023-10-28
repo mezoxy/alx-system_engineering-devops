@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script will kill the process 7-highlander
+pid=$(<kil7-hight.txt)
+kill -9 "$pid"
