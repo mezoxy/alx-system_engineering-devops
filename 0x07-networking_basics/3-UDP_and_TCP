@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script will answer these questions: 
+# Qu1: Which statement is correct for the TCP box
+# Qu2: Which statement is correct for the UDP box:
+# Qu3: Which statement is correct for the TCP worker
+1
+2
+1
