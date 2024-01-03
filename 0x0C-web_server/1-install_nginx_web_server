@@ -6,4 +6,4 @@ sudo apt-get install ngnix
 sudo ufw allow 'Nginx HTTP'
 sudo ufw enable
 sudo sed -i 's/.*/Hello World!/' /var/www/html/index.nginx-debian.html
-curl 54.237.35.210
+sudo service nginx start
