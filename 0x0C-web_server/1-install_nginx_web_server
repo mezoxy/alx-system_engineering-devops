@@ -4,5 +4,5 @@
 sudo apt-get update
 sudo apt-get install ngnix
 sudo ufw allow 'Nginx HTTP'
-sudo ufw allow 'openSSH'
+#sudo ufw allow 'openSSH'
 sudo ufw enable
