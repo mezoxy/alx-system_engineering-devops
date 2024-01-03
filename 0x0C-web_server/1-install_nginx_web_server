@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#write a Bash script that configures a new Ubuntu machine
+
+sudo apt-get update
+sudo apt-get install ngnix
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 'openSSH'
+sudo ufw enable
