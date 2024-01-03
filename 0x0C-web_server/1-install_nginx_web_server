@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#write a Bash script that configures a new Ubuntu machine
+#write a Bash script that configures Ubuntu machine
 sudo apt-get update -y
 sudo apt-get install ngnix -y
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
