@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
 #Redirection
-apt-get update -y
-apt-get install nginx -y
-echo 'Hello World!' > /var/www/html/index.html
 
+./1-install_nginx_web_server
