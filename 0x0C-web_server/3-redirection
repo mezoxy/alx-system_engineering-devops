@@ -3,3 +3,4 @@
 #Redirection
 
 ./1-install_nginx_web_server
+sudo sed -i
