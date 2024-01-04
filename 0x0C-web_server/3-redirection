@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
 #comment
+apt-get update -y
+apt-get install nginx -y
+echo 'Hello World!' > /var/www/html/index.html
+
