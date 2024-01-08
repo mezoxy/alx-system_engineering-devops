@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#We need to configure web-02 to be identical to web-01 and HTTP response contains a custom header the name of the custom HTTP header must be 'X-Served-By'and the value of the custom HTTP header must be the hostname of the server Nginx is running on
+sudo apt-get update -y
+sudo apt-get install nginx -y
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+sudo service nginx start
+sudo sed -i "s#http {#http {\n\n\t add_header X-Served-By '393408-web-02';#" /etc/nginx/nginx.conf
+sudo service nginx reload
