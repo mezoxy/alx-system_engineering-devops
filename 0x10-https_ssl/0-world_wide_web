@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#Bash script that shows domain and subdomain points to an IP
+#echo "The subdomain www is a A record and points to
+dig_fun ()
+{
+	if [ "$#" == 1 ]
+	then
+		all=("www" "lb-01" "web-01" "web-02")
+		for sub in "${all[@]}"
+		do
+			cmd=$(dig $sub"."$1 | grep -A1 'ANSWER SECTION:')
+			c=$(echo $cmd | awk '{print $NF}')
+			echo "The subdomain $sub is A record and points to $c"
+		done
+	else
+		cmd=$(dig $2"."$1 | grep -A1 'ANSWER SECTION:')
+		c=$(echo $cmd | awk '{print $NF}')
+		echo "The subdomain $2 is A record and points to $c"
+	fi
+}
+
+if [ "$#" == 1 ]
+then
+	dig_fun "$1"
+else
+	dig_fun "$1" "$2"
+fi
