@@ -19,4 +19,4 @@ EOL
 )
 
 echo "$config" | sudo tee  -a /etc/haproxy/haproxy.cfg
-sudo systemctl restart haproxy
+sudo service haproxy restart
