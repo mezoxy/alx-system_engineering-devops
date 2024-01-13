@@ -10,3 +10,4 @@ echo "Ceci n'est pas une page"  | sudo tee /var/www/html/ero.html
 c=$(hostname)
 sudo sed -i "s#http {#http {\n\n\tadd_header X-Served-By '$c';#" /etc/nginx/nginx.conf
 sudo service nginx reload
+sudo sevice nginx start
