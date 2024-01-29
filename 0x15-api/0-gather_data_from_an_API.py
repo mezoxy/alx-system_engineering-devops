@@ -2,9 +2,9 @@
 """The module: 0-gather_data_from_an_API"""
 
 
+from json import loads
 import requests
 import sys
-from json import loads
 
 
 if __name__ == "__main__":
