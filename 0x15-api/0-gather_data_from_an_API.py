@@ -30,4 +30,4 @@ if __name__ == "__main__":
 
     print("Employee {} is done with tasks({}/{}):".format(name, j, i))
     for task in st.split("$")[:-1]:
-        print("     {}".format(task))
+        print("\t {}".format(task))
