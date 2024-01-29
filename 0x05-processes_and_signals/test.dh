@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script for while loop
+j="gaza"
+i=0
+while [ $i -le 4 ]
+do
+	if [[ $j == "g*" ]]
+	then
+		echo not my friend
+	else
+		echo Hi friend
+	fi
+	i=$((i+1))
+done

@@ -1,36 +1,3 @@
-frontend myfrontend
-    mode http
-    bind *:80
-    default_backend myservers
-
-backend myservers
-    balance roundrobin
-    server 393408-web-01 54.237.35.210:80 check
-    server 393408-web-02 34.239.107.142:80 check
-frontend myfrontend
-    mode http
-    bind *:80
-    default_backend myservers
-
-backend myservers
-    balance roundrobin
-    server 393408-web-01 54.237.35.210:80 check
-    server 393408-web-02 34.239.107.142:80 check
-\nfrontend myfrontend
-    mode http
-    bind *:80
-    default_backend myservers
-
-backend myservers
-    balance roundrobin
-    server 393408-web-01 54.237.35.210:80 check
-    server 393408-web-02 34.239.107.142:80 check
-   \nfrontend myfrontend
-    mode http
-    bind *:80
-    default_backend myservers
-
-backend myservers
-    balance roundrobin
-    server 393408-web-01 54.237.35.210:80 check
-    server 393408-web-02 34.239.107.142:80 check
+alx-system_engineering-devops/0x0F-load_balancer# cat test.txt 1> test.txt
+root@637b3a670ba3:/alx-system_engineering-devops/0x0F-load_balancer# cat test.txt
+root@637b3a670ba3:/alx-system_engineering-devop
