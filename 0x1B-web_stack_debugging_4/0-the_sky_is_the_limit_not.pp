@@ -1,5 +1,10 @@
-# Fix the num of failed request
-exec { 'fix--for-nginx':
-  command => "sed -i 's/worker_processes 4;/worker_processes 7;/g' /etc/nginx/nginx.conf; sudo service nginx restart",
-  path    => ['/bin', '/usr/bin', '/usr/bin']
+# instal the_sky_is_the_limit_no
+exec { 'update ulimit':
+	command  => "sed -i 's/^ULIMIT=.*/ULIMIT=\"-n 15000\"/' /etc/default/nginx",
+		provider => 'shell',
+}
+
+-> exec { 'restart':
+	command  => 'service nginx restart',
+		 provider => 'shell',
 }
